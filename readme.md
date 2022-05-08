@@ -50,9 +50,8 @@ I uses the [API Platform Component](https://api-platform.com/) with `Symfony` wh
 - [Symfony binary/installer](https://symfony.com/download)
 
 ## Setup
-
-1. Copy .env.example to .env `cp .env.example .env`
 1. Clone the repository.
+1. Copy .env.example to .env `cp .env.example .env`
 1. Install packages by running `composer install`.
 
 ## Database Configurations
