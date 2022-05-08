@@ -41,7 +41,7 @@ I uses the [API Platform Component](https://api-platform.com/) with `Symfony` wh
 
 ## Test Cases
 - Feature test cases class `ContactsTest.php` will be found in `test/ContactsTest.php`.
-- I covered all the positive and negative test cases of `GET & POST` in this class.
+- I tried to cover all the positive and negative test cases of `GET & POST` in this class.
 
 # Run Application via Symfony CLI
 
