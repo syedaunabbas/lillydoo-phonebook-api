@@ -40,7 +40,7 @@ I uses the [API Platform Component](https://api-platform.com/) with `Symfony` wh
 - `src/Controller/ContactProfileController.php` Modify/Upate the existing POST route to achieve profile image upload functionality 
 
 ## Test Cases
-- Feature test cases class `ContactsTest.php` will be found in `test/Feature`.
+- Feature test cases class `ContactsTest.php` will be found in `test/ContactsTest.php`.
 - I covered all the positive and negative test cases of `GET & POST` in this class.
 
 # Run Application via Symfony CLI
