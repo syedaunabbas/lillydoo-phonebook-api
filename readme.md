@@ -51,9 +51,9 @@ I uses the [API Platform Component](https://api-platform.com/) with `Symfony` wh
 
 ## Setup
 
+1. Copy .env.example to .env `cp .env.example .env`
 1. Clone the repository.
 1. Install packages by running `composer install`.
-1. Copy .env.example to .env `cp .env.example .env`
 
 ## Database Configurations
 For demonstration purpose, I used database named `phonebook`. Configurations can be visited in `.env` file located at the root of the project. 
@@ -64,6 +64,9 @@ You can change your DB changes
 
 Now, create database via doctrine command
 - `php ./bin/console doctrine:database:create`
+
+Now, add `contacts` table schema via doctrine command
+- `php bin/console doctrine:schema:update --force`
 
 
 ## Run
