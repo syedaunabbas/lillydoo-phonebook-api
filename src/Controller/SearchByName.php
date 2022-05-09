@@ -25,8 +25,6 @@ class SearchByName extends AbstractController
 
     public function __invoke(Request $request)
     {
-        #dd($request->get('keyword'));
-
         $keyword = $request->get('keyword');
         if (!$keyword) {
             throw new BadRequestHttpException('"keyword" is required');

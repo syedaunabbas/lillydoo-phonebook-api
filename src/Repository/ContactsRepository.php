@@ -47,54 +47,11 @@ class ContactsRepository extends ServiceEntityRepository
         }
     }
 
-    // /**
-    //  * @return Contacts[] Returns an array of Contacts objects
-    //  */
-    /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('c.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
-
-    /*
-    public function findOneBySomeField($value): ?Contacts
-    {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
-
-
     /**
      * @return Contacts[] Returns an array of Contacts objects
      */
     public function findByName($keyword)
     {
-        #dd($keyword);
-        // $query = $this->createQueryBuilder('c');
-
-        // $query->where('c.firstname  LIKE :keyword')
-        //     ->orWhere('c.lastname LIKE :keyword')
-        //     ->setParameter('keyword', $keyword)
-        //     #->orderBy('c.firstname', 'ASC')
-        //     ->getQuery()
-        //     ->getOneOrNullResult();
-
-        // #dd(get_class_methods($query));
-        // dd($query->__toString());
-
         return $this->createQueryBuilder('c')
             ->where('c.firstname  LIKE :keyword')
             ->orWhere('c.lastname LIKE :keyword')
